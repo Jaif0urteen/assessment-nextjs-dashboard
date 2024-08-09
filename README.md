@@ -48,7 +48,8 @@ Code Quality: Clean, modular code with TypeScript for type safety and unit tests
 
 ## Home Page
 
-![Screenshot 2024-08-09 125647](https://github.com/user-attachments/assets/a8635f8d-1b8f-4d00-b48b-a694e5a74078)
+![Screenshot 2024-08-09 135453](https://github.com/user-attachments/assets/c011d779-cd70-46bd-aab3-aedfa29fc131)
+
 
 ## Dashboard
 
