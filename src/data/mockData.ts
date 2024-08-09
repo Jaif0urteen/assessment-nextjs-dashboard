@@ -1,4 +1,4 @@
-// src/data/mockData.ts
+
 
 export const lineChartData = [
     { label: 'Jan', value: 30 },

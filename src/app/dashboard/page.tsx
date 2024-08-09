@@ -11,7 +11,7 @@ const DataTable = dynamic(() => import('@/components/DataTable'), { ssr: false, 
 
 const Dashboard = () => {
   const [fontSize, setFontSize] = useState('medium')
-  const [dateFormat, setDateFormat] = useState('MM/DD/YYYY') // Default format for moment.js
+  const [dateFormat, setDateFormat] = useState('MM/DD/YYYY') 
   const [currentDate, setCurrentDate] = useState(new Date())
 
   useEffect(() => {
@@ -20,12 +20,12 @@ const Dashboard = () => {
     if (settings.dateFormat) setDateFormat(settings.dateFormat)
   }, [])
 
-  // Correctly format the current date using moment.js
+  
   const formattedDate = moment(currentDate).format(dateFormat)
 
-  // Set font size based on selected setting
+ // Define the Size Formate
   const h1FontSize = fontSize === 'small' ? 'text-xl' : fontSize === 'large' ? 'text-4xl' : 'text-2xl'
-  const h2FontSize = fontSize === 'small' ? 'text-lg' : fontSize === 'large' ? 'text-3xl' : 'text-xl'
+  const h2FontSize = fontSize === 'small' ? 'text-lg' : fontSize === 'large' ? 'text-2xl' : 'text-xl'
 
   return (
     <div className="flex">
@@ -33,7 +33,7 @@ const Dashboard = () => {
       <div className="p-4 space-y-4 flex-1">
         <h1 className={`${h1FontSize} font-bold text-blue-600 dark:text-sky-400`}>Dashboard</h1>
 
-        {/* Display current date formatted as per user selection */}
+         {/* Display current date formatted as per user selection * */}
         <div className="mb-4">
           <h2 className={`${h2FontSize} font-semibold text-gray-700`}>Today's Date: {formattedDate}</h2>
         </div>

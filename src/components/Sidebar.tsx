@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { FiMenu } from 'react-icons/fi'
-import { FaBuromobelexperte, FaTools } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 import { FaChartPie } from "react-icons/fa6";
 
 const Sidebar = () => {
